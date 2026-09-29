@@ -6,8 +6,7 @@ describe("DevOps CI/CD Application", () => {
     const response = await request(app).get("/");
 
     expect(response.statusCode).toBe(200);
-    expect(response.body.message).toBe("DevOps CI/CD Project is running!");
-    expect(response.body.status).toBe("healthy");
+    expect(response.body.message).toBe("DevOps CI/CD Project v2 is running!");    expect(response.body.status).toBe("healthy");
   });
 
   test("GET /health should return UP", async () => {

@@ -3,12 +3,12 @@ const express = require("express");
 const app = express();
 
 const PORT = process.env.PORT || 3000;
-const VERSION = process.env.APP_VERSION || "1.0.0";
+const VERSION = process.env.APP_VERSION || "2.0.0";
 const BUILD_ID = process.env.BUILD_ID || "local";
 
 app.get("/", (req, res) => {
   res.json({
-    message: "DevOps CI/CD Project is running!",
+    message: "DevOps CI/CD Project v2 is running!",
     version: VERSION,
     build: BUILD_ID,
     environment: process.env.NODE_ENV || "development",
